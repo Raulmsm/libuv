@@ -165,7 +165,7 @@ int uv_ntstatus_to_winsock_error(NTSTATUS status) {
     case STATUS_TOO_MANY_PAGING_FILES:
     case STATUS_REMOTE_RESOURCES:
     case STATUS_TOO_MANY_ADDRESSES:
-      return WSAENOBUFS;
+      return WSAEADDRNOTAVAIL;
 
     case STATUS_SHARING_VIOLATION:
     case STATUS_ADDRESS_ALREADY_EXISTS:
